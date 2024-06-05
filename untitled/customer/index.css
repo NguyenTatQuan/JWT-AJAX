@@ -8,6 +8,7 @@
     margin: auto;
     border: 2px solid;
     border-collapse: collapse;
+    text-align: center;
 }
 
 #display-list tr, #display-list th, #display-list td {
@@ -183,7 +184,7 @@ form#update-customer input[type="submit"]:hover {
 }
 
 #div-btn button:hover {
-    background: #f06;
+    background: #ffe600;
 }
 .btn button:hover {
     background: #f06;
@@ -201,19 +202,19 @@ form#update-customer input[type="submit"]:hover {
 
 @keyframes backgroundAnimation {
     0% {
-        background: linear-gradient(135deg, #f06, #4a90e2);
+        background: linear-gradient(135deg, #000000, #4a90e2);
     }
     100% {
-        background: linear-gradient(135deg, #4a90e2, #f06);
+        background: linear-gradient(135deg, #4a90e2, #000000);
     }
 }
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+        text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
     }
     100% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+        text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
     }
 }
 

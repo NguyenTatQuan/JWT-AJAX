@@ -11,7 +11,7 @@ function docLocalStorage() {
 }
 
 function addNewCustomer(event) {
-    event.preventDefault(); // Chặn sự kiện mặc định của thẻ
+    event.preventDefault();
 
     let name = $('#name').val();
     let age = $('#age').val();
@@ -35,7 +35,7 @@ function addNewCustomer(event) {
         url: "http://localhost:8080/api/customers",
         success: function() {
             successHandler();
-            displayFormCreate(); // Hide the form after successful addition
+            displayFormCreate();
         }
     });
 }
@@ -91,7 +91,7 @@ function showUpdateForm(customer) {
 }
 
 function updateCustomer(event) {
-    event.preventDefault(); // Chặn sự kiện mặc định của thẻ
+    event.preventDefault();
 
     let name = $('#update-name').val();
     let age = $('#update-age').val();
@@ -115,7 +115,7 @@ function updateCustomer(event) {
         url: `http://localhost:8080/api/customers/${currentUpdateId}`,
         success: function() {
             successHandler();
-            hideForms(); // Hide the form after successful update
+            hideForms();
         }
     });
 }

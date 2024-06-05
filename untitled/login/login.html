@@ -4,21 +4,69 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+            color: #f39c12;
+            animation: sparkle 1.5s infinite;
+        }
+
+        table {
+            margin: 50px auto;
+            border-collapse: collapse;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            border: 1px solid #fff;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes sparkle {
+            0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #f39c12, 0 0 15px #f39c12, 0 0 20px #f39c12, 0 0 25px #f39c12; }
+            50% { text-shadow: 0 0 5px #fff, 0 0 10px #f39c12, 0 0 15px #f39c12; }
+        }
+    </style>
 </head>
 <body>
-<h1>Dang nhap</h1>
+<h1>Đăng nhập</h1>
 <table border="1px">
     <tr>
-        <td>Username</td>
+        <td>Tài khoản</td>
         <td><input id="username"></td>
     </tr>
     <tr>
-        <td>Password</td>
+        <td>Mật khâu</td>
         <td><input id="password"></td>
     </tr>
     <tr>
         <td></td>
-        <td><button onclick="login()">Dang nhap</button></td>
+        <td><button onclick="login()">Đăng Nhập</button></td>
     </tr>
 </table>
 <script src="login.js"></script>
